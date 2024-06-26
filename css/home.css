@@ -19,7 +19,7 @@
 /* SECTION 1 CONTENT: CENTERED */
 .div-section-one-content {
     align-items: center;
-    /* border: 10px solid red; */
+    border: 2px solid rgb(0, 255, 51);
     display: flex;
     flex-direction: column;
     margin: 0 auto; /* so this centering wont work 2/3 */
@@ -29,17 +29,19 @@
 }
 
 .div-section-one-content > img {
+    border: 1px solid red;
     height: 150px;
     margin-bottom: 8px;
     width: 150px;
 }
 
 .div-section-one-content p {
+    border: 1px solid red;
     color: var(--clr-white);
 }
 
 .div-section-one-content > h1 {
-    /* border: 1px solid red;   */
+    border: 1px solid red;  
     color: var(--clr-white);
     font-size: 5em;
     /* font-size: 10vmin; */
@@ -56,7 +58,7 @@
 /* SECTION 2 CONTENT: CENTERED */
 .div-section-two-content {
     align-items: center;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     gap: 45px;
@@ -126,7 +128,7 @@
 /* SECTION THREE CONTENT: CENTERED */
 .div-section-three-content {
     align-items: center;
-    /* border: 1px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -163,7 +165,7 @@
 /* SECTION 4 CONTENT: CENTERED */
 .div-section-four-content {
     align-items: center;
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -240,10 +242,19 @@
     text-align: center;
 }
 
+@media(max-width: 981px) {
+    .div-section-one-content h1 {
+        font-size: 3.1em;
+        width: 15ch;
+    }
+}
 
-/* 768 ABOVE */
-@media(min-width: 768px) {
-
+/* 768 BELOW */
+@media(max-width: 768px) {
+    .div-section-one-content h1 {
+        font-size: 3em;
+        width: 15ch;
+    }
 }
 
 /* 640 BELOW */
@@ -286,6 +297,7 @@
         /* border: 1px solid red; */
         font-size: 2em;
         text-align: center;
+        width: 30ch;
     }
 
     .div-section-three-content > img {
@@ -303,6 +315,22 @@
     .div-section-three-content > p {
         font-size: 1em;
         width: 33ch;
+    }
+}
+
+@media(max-width: 361px) {
+    .div-section-one-content h1 {
+        width: 15ch;
+    }
+
+    .div-good-to-know-balls-container {
+        /* border: 3px solid red; */
+    }
+
+    /* to move the ball slightly inward */
+    .div-ball {
+        height: 320px; /* consider changing PX to other unit */
+        width: 320px; /* consider changing PX to other unit */
     }
 }
 
