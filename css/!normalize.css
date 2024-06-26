@@ -1,0 +1,171 @@
+
+/* 
+
+ **DO REMIND**
+    - This stylesheet is used as NORMALIZE and UTILITY
+    - I use the <select> element selector directly to apply width: 100%; to the "SECTION: WIDE"
+    - There's a separate file that consist of the border porperties that can be use for visualization
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+:root {
+    --clr-white: #f5f6f7;
+    --clr-violet: #E694F4;
+
+    --box-shadow-preset: 0 3px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* NORMALIZE */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    -webkit-user-drag: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+
+
+
+/* UTILITY */
+
+/* HEADER */
+nav {
+    align-items: center;
+    background-color: var(--clr-white);
+    /* border: 1px solid red; */
+    display: flex;
+    /* height: 80px; */
+    justify-content: space-between;
+    padding: 1em 1.1em;
+    width: 100%;
+}
+
+.p-brand-name-on-nav {
+    font-size: 2.2em; /* 35px */
+    font-weight: 600;
+    /* padding: 0 1.1em; */
+}
+
+.p-brand-name-on-nav:hover {
+    color: var(--clr-violet);
+    transition: .5s;
+}
+
+nav ul {
+    /* border: 1px solid red; */
+    margin-right: 1.5em; 
+}
+
+nav ul li {
+    /* border: 1px solid red; */
+    display: inline-block; /* main reason of changes; try removing, see for urself */
+    line-height: 30px;
+    margin: 0 0.5em; /* similar for 10px */
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1.1em;
+}
+
+.a-selected:hover {
+    color: var(--clr-violet);
+    transition: 0.5s;
+}
+
+.button-bars {
+    display: none;
+}
+
+/* SECTION */
+section {
+    width: 100%;
+}
+
+
+
+/* FOOTER  */
+footer {
+    background-color: whitesmoke;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: var(--clr-violet);
+    transition: .5s;
+}
+
+
+/* 767 BELOW */
+@media(max-width: 767px) {
+    /* sticky candy lab text */
+    .p-brand-name-on-nav {
+        font-size: 1.5em;
+    }
+
+    .a-selected {
+        display: none;
+    }
+
+    .button-bars {
+        background-color: var(--clr-white);
+        border: none;
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+    
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 641px) {
+    /* sticky candy lab text */
+    .p-brand-name-on-nav {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 476px) {
+    /* sticky candy lab text */
+    .p-brand-name-on-nav {
+        font-size: 1em;
+    }
+
+    /* idk kung may gamit to, basta nilagay ko nalang */
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* idk kung may gamit to, basta nilagay ko nalang */
+    p {
+        font-size: 0.9em;
+    }
+}

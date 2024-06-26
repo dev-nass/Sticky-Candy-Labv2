@@ -1,0 +1,138 @@
+body {
+    background: #7466fe;
+    background-attachment: fixed;
+}
+
+/* SECTION 1: WIDE */
+.section-one {
+    align-items: center;
+    /* border: 10px solid red; */
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    width: 100%;
+}
+
+/* section 1: centered */
+.div-section-one-content {
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em;
+    width: 100%;
+}
+
+/* form: the white bg and padding */
+.div-section-one-content form {
+    background-color: var(--clr-white);
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 2em 2em 1em 2em;
+}
+
+.div-section-one-content h2 {
+    font-size: 2.1em;
+    text-align: center;
+    margin-bottom: 0.2em;
+}
+
+/* container for FIRST and LAST name INPUT and LABELS */
+.div-full-name-container {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* horizontal alignment: put space between First name   Last Name */
+}
+
+/* first name input and label container */
+.div-first-name-container,
+/* last name input and label container */
+.div-last-name-container {
+    /* border: 3px solid red; */
+    width: 49%;
+}
+
+.div-section-one-content label {
+    font-size: 1.2em;
+}
+
+/* the input 1/2 */
+#input-first-name,
+#input-last-name,
+.div-section-one-content input[type="email"] {
+    border-radius: 90px;
+    border: 1px solid grey;
+    font-size: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    padding: 0.2em 1em;
+    width: 100%;
+}
+
+/* the input 2/2 */
+.div-section-one-content textarea {
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-top: 0.3em;
+    margin-bottom: 2em;
+    resize: none;
+    padding: 0.1em 1em;
+    width: 100%;
+}
+
+/* submit input button */
+.div-section-one-content input[type="submit"] {
+    background-color: #7466fe;
+    border: none;
+    box-shadow: 0 1px 3px 1px rgba(30, 27, 27, 0.19);
+    color: var(--clr-white);
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0.8em 1.5em;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.div-section-one-content input[type="submit"]:hover {
+    box-shadow: 0 1px 3px 1px rgba(30, 27, 27, 0);
+    transform: translateY(-3px);
+}
+
+/* container for SVG */
+.div-account-links {
+    align-items: center;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.div-account-links a {
+    /* border: 1px solid red; */
+}
+
+/* actual SVGs */
+.div-account-links svg {
+    height: 20px;
+}
+
+
+
+
+@media(max-width: 481px) {
+    .div-section-one-content h2 {
+        font-size: 1.8em;
+    }
+
+    .div-section-one-content label {
+        font-size: 1em;
+    }
+
+    /* first name input and label container */
+    .div-first-name-container,
+    /* last name input and label container */
+    .div-last-name-container {
+        width: 100%;
+    }
+}
