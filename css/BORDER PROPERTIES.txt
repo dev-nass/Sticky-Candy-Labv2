@@ -1,0 +1,67 @@
+/* HEADER */
+nav,
+nav ul,
+nav ul li {
+border: 2px solid #115e59;
+}
+
+
+***** HOME PAGE *****
+
+/* MAIN */
+
+/* SECTION 1 CONTENT: CENTERED */
+.div-section-one-content,
+/* SECTION 2 CONTENT: CENTERED */
+.div-section-two-content {
+    border: 2px solid #5b21b6;
+}
+
+/* part of section 2 */
+.div-product-container,
+.div-product-image-container {
+    border: 2px solid #9d174d;
+}
+
+/* SECTION 3 CONTENT: CENTERED */
+.div-section-three-content {
+    border: 4px solid #fbbf24;
+}
+
+
+/* SECTION 4 CONTENT: CENTERED */
+.div-section-four-content,
+/* first row */
+.div-good-to-know-header,
+/* second row */
+.div-good-to-know-ball-container,
+/* holds the ball and its text below */
+.div-ball-container {
+    border: 2px solid #b91c1c;
+}
+
+/* FOOTER */
+
+
+
+
+
+
+***** ABOUT PAGE *****
+
+.section-one,
+.div-section-one-content {
+    border: 2px solid red;
+}
+
+.section-two,
+.div-section-two-content {
+    border: 2px solid rgb(221, 204, 20);
+}
+
+img,
+h2,
+h1,
+input {
+    border: 2px solid palegreen;;
+}
